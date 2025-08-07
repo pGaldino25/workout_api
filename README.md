@@ -5,20 +5,20 @@ Desenvolvido com **FastAPI**, utilizando **Alembic** para versionamento de banco
 
 ## 🧱 Estrutura do Projeto
 
+```text
 workout_api/
 ├── atleta/
 ├── categorias/
 ├── centro_treinamento/
 ├── configs/
 ├── contrib/
-├── main.py
-├── routers.py
 ├── alembic.ini
 ├── docker-compose.yml
 ├── Makefile
+├── main.py
 ├── requirements.txt
-
-
+├── routers.py
+```
 
 ## 🚀 Tecnologias e Ferramentas
 
@@ -62,10 +62,6 @@ pip install -r requirements.txt
 
 # Criar nova migration
 make create-migrations d="init"
-alembic revision --autogenerate -m "sua_mensagem"
-# Aplicar migrations
-alembic upgrade head
-
 
 📂 Estrutura das Pastas
 
@@ -80,3 +76,6 @@ alembic upgrade head
     Python 3.10+
     Docker e Docker Compose
     Make
+
+Acessar a documentação em: 
+ - http://127.0.0.1:8000/docs#/
